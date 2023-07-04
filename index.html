@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Budget</title>
+</head>
+
+<body>
+
+    <main class="main">
+
+        <h1 class="page-title">Keep track of your budget!</h1>
+
+        
+        <section class="budget">
+            <div class="container">
+                <div class="budget__wrapper">
+                    <h2 class="section-title">Your weekly expenses <span>(resets every Sunday)</span></h2>
+                    <div class="budget__block">
+                        <div class="budget__forms">
+                            <form action="#" class="budget__form budget__form--budget">
+                                <div class="budget__form-title">Enter your budget:</div>
+                                <div class="budget__form-input-box">
+                                    <input required type="number" class="budget__form-input budget__form-input--budget" placeholder="only number" min="0">
+                                </div>
+                                <div class="budget__form-bottom">
+                                    <button type="submit" class="budget__form-btn budget__form-btn--set-budget">Set</button>
+                                    <div class="budget__form-btn budget__form-btn--currency">Change currency</div>
+                                </div>
+                            </form>
+                            <form action="#" class="budget__form budget__form--expenses">
+                                <div class="budget__form-title">Enter your expenses:</div>
+                                <div class="budget__form-input-box">
+                                    <input required type="text" class="budget__form-input budget__form-input--expense-name" placeholder="name">
+                                </div>
+                                <div class="budget__form-input-box">
+                                    <input required type="number" class="budget__form-input budget__form-input--expense-amount" placeholder="amount" min="0">
+                                </div>
+                                <button class="budget__form-btn">Add</button>
+                            </form>
+                            <button class="budget__form-btn budget__form-btn--reset-all">Reset All</button>
+                        </div>
+                        <div class="budget__info">
+                            <div class="budget__info-top">
+                                <div class="budget__info-box budget__info-box--budget">
+                                    <div class="budget__info-title">Budget</div>
+                                    <div class="budget__info-icon">💰</div>
+                                    <div class="budget__info-amount">0</div>
+                                </div>
+                                <div class="budget__info-box budget__info-box--expenses">
+                                    <div class="budget__info-title">Expenses</div>
+                                    <div class="budget__info-icon">💸</div>
+                                    <div class="budget__info-amount">0</div>
+                                </div>
+                                <div class="budget__info-indicator-box">
+                                    <div class="budget__info-indicator-title">Indicator:</div>
+                                    <div class="budget__info-indicator" data-percentage="10%"><span></span></div>
+                                </div>
+                            </div>
+                            <div class="budget__info-expenses-title">Recent expenses:</div>
+                            <div class="budget__info-expenses">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+</main>
+
+
+
+<script src="model.js"></script>
+<script src="view.js"></script>
+<script src="controller.js"></script>
+</body>
+
+</html>
